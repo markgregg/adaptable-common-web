@@ -1,6 +1,6 @@
-package org.adaptable.common.api.socket
+package io.github.markgregg.common.api.socket
 
-import org.adaptable.common.protocol.Response
+import io.github.markgregg.common.protocol.Response
 import javax.websocket.CloseReason
 import javax.websocket.Session
 

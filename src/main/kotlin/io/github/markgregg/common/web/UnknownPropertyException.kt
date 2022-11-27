@@ -1,3 +1,3 @@
-package org.adaptable.common.web
+package io.github.markgregg.common.web
 
 class UnknownPropertyException(message: String) : RuntimeException(message)

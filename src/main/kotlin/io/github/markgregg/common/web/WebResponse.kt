@@ -1,7 +1,7 @@
-package org.adaptable.common.web
+package io.github.markgregg.common.web
 
-import org.adaptable.common.api.Payload
-import org.adaptable.common.api.Response
+import io.github.markgregg.common.api.Payload
+import io.github.markgregg.common.api.Response
 
 
 interface WebResponse<T> : Response, Payload<T> {

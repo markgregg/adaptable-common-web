@@ -1,4 +1,4 @@
-package org.adaptable.common.web
+package io.github.markgregg.common.web
 
 import java.io.BufferedReader
 import java.io.FileReader

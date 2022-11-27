@@ -1,11 +1,11 @@
-package org.adaptable.common.api.socket
+package io.github.markgregg.common.api.socket
 
 import com.fasterxml.jackson.module.kotlin.jacksonObjectMapper
 import io.kotest.assertions.throwables.shouldThrowExactly
 import io.kotest.core.spec.style.FunSpec
 import io.kotest.matchers.shouldBe
-import org.adaptable.common.protocol.Response
-import org.adaptable.common.protocol.StartTestResponse
+import io.github.markgregg.common.protocol.Response
+import io.github.markgregg.common.protocol.StartTestResponse
 import org.mockito.Mockito.mock
 import org.mockito.kotlin.argumentCaptor
 import org.mockito.kotlin.times

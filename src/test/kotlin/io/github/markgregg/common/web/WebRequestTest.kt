@@ -1,4 +1,4 @@
-package org.adaptable.common.web
+package io.github.markgregg.common.web
 
 import com.fasterxml.jackson.databind.node.ObjectNode
 import com.fasterxml.jackson.module.kotlin.jacksonObjectMapper

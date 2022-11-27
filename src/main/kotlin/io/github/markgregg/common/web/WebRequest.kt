@@ -1,8 +1,8 @@
-package org.adaptable.common.web
+package io.github.markgregg.common.web
 
 import com.fasterxml.jackson.databind.node.ObjectNode
 import com.fasterxml.jackson.module.kotlin.jacksonObjectMapper
-import org.adaptable.common.api.Request
+import io.github.markgregg.common.api.Request
 import java.util.*
 
 data class WebRequest(

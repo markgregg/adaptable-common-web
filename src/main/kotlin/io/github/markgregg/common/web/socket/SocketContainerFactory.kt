@@ -1,4 +1,4 @@
-package org.adaptable.common.api.socket
+package io.github.markgregg.common.api.socket
 
 import javax.websocket.WebSocketContainer
 

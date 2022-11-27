@@ -1,4 +1,4 @@
-package org.adaptable.common.api.socket
+package io.github.markgregg.common.api.socket
 
 import io.kotest.core.spec.style.FunSpec
 import io.kotest.matchers.types.shouldBeInstanceOf

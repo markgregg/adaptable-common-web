@@ -1,7 +1,7 @@
-package org.adaptable.common.api.socket
+package io.github.markgregg.common.api.socket
 
 import com.fasterxml.jackson.module.kotlin.jacksonObjectMapper
-import org.adaptable.common.protocol.Response
+import io.github.markgregg.common.protocol.Response
 import org.slf4j.LoggerFactory
 import java.lang.Thread.sleep
 import java.net.URI

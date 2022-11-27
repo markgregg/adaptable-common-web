@@ -1,3 +1,3 @@
-package org.adaptable.common.api.socket
+package io.github.markgregg.common.api.socket
 
 class AgentUnavailableException : Exception()
