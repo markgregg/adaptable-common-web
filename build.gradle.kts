@@ -24,9 +24,6 @@ val mockitoKotlinVersion = "3.2.0"
 val adaptableExpression = "1.0.0-SNAPSHOT"
 val adaptableCommon = "1.0.0-SNAPSHOT"
 
-val downLoadPackageUser="markgregg"
-val downLoadPackageToken="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"
-
 repositories {
 	mavenCentral()
 	maven {
@@ -130,7 +127,6 @@ publishing {
 			}
 		}
 	}
-
 
 	signing {
 		sign(publishing.publications["maven"])
