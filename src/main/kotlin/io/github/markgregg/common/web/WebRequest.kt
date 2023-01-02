@@ -22,9 +22,8 @@ data class WebRequest(
             : this(id,headers, parameters, objectNode.toString() ) {
                 json = objectNode
             }
-
-    override fun getItem(name: String): Any {
-        return when(name) {
+    override fun getItem(name: String): Any =
+        when(name) {
             "text" -> body
             "body" -> asJson()
             "parameter" -> if (parameters == null) {
@@ -39,7 +38,6 @@ data class WebRequest(
                 }
             else -> throw UnknownPropertyException("$name is not part of this request")
         }
-    }
 
     fun asJson(): ObjectNode {
         if( json == null ) {
@@ -52,9 +50,6 @@ data class WebRequest(
         }
         return json!!
     }
-
-    fun <T> asObject(ofType: Class<T>): T {
-        return jacksonObjectMapper().readValue(body, ofType)
-    }
-
+    fun <T> asObject(ofType: Class<T>): T =
+        jacksonObjectMapper().readValue(body, ofType)
 }

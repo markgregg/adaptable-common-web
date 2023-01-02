@@ -9,14 +9,13 @@ data class TextResponse (
     override val headers: Map<String,String>? = null,
     val isFile: Boolean? = null
 ) : WebResponse<String> {
-
-    override fun payload(): String {
-        return if( isFile == true) {
+    override fun payload(): String =
+       if( isFile == true) {
             BufferedReader(FileReader(body)).use {
                 it.readText()
             }
         } else {
             body
         }
-    }
+
 }

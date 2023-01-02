@@ -10,13 +10,12 @@ data class BinaryResponse(
     val isFile: Boolean? = null
 ) : WebResponse<ByteArray> {
 
-    override fun payload(): ByteArray? {
-        return if( isFile == true) {
+    override fun payload(): ByteArray? =
+        if( isFile == true) {
             FileInputStream(body).use {
                 it.readAllBytes()
             }
         } else {
             Base64.getDecoder().decode(body)
         }
-    }
 }
